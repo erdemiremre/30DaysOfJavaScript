@@ -1,0 +1,1 @@
+console.log('bu yazi js dosyasından geldi....')
