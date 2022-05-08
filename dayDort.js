@@ -56,14 +56,14 @@ if(number === 4){
 // Pratik 4
 
 //let girilenYas =parseInt(prompt('Yasinizi giriniz ...')) 
-const date  = new Date();
-let year = date.getDate();
-let birthDay = year - girilenYas
-let hesaplama = year - birthDay
- hesaplama >= 18 ? console.log(`Yasiniz ${hesaplama} ehliyet alabilirsiniz`) : console.log(`${18 - hesaplama} yiliniz daha var ehliyet icin`)
+// const date  = new Date();
+// let year = date.getDate();
+// let birthDay = year - girilenYas
+// let hesaplama = year - birthDay
+//  hesaplama >= 18 ? console.log(`Yasiniz ${hesaplama} ehliyet alabilirsiniz`) : console.log(`${18 - hesaplama} yiliniz daha var ehliyet icin`)
 
 
- 
+
 // Pratik 5 
 
 let a = 5
@@ -74,3 +74,44 @@ if(a>b){
 }else{
     console.log(`${b} ${a}'ten buyuktur`)
 }
+
+
+// Pratik 6 
+
+// let kullaniciNot =parseInt(prompt('Lutfen notunuzu giriniz..')) 
+
+// if(kullaniciNot>=80 && kullaniciNot<100){
+//     console.log('AA aldiniz..')
+// }else if(kullaniciNot>=70 && kullaniciNot<79){
+//     console.log('BB aldiniz..')
+// }else if(kullaniciNot>50 && kullaniciNot<69){
+//     console.log('CC aldiniz..')
+// }else if(kullaniciNot>0 && kullaniciNot<49){
+//     console.log('FF aldiniz..')
+// }
+
+
+
+//pratik 7 girilen tarihteki ayin kac cektigini bulmak..
+
+let girilenAY = prompt('ay giriniz.').toLowerCase()
+let girilenYil = prompt('Yil giriniz..')
+
+let aylar = [
+    'ocak',
+    'subat',
+    'mart',
+    'nisan',
+    'mayis',
+    'haziran',
+    'temmuz',
+    'agustos',
+    'eylul',
+    'ekim',
+    'kasim',
+    'aralik'
+]
+
+let ayGunuHesapla = new Date(girilenYil , aylar.indexOf(girilenAY)+1 , 0).getDate()
+
+console.log(`${girilenYil} yilinin ${girilenAY} ayi ${ayGunuHesapla} gunden olusmaktadir.`)
