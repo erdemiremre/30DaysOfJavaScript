@@ -112,6 +112,12 @@ let aylar = [
     'aralik'
 ]
 
+let deneme = aylar.findIndex(ay => ay === girilenAY)
+console.log(deneme)
+
 let ayGunuHesapla = new Date(girilenYil , aylar.indexOf(girilenAY)+1 , 0).getDate()
+
+//let ayGunuHesapla = new Date(girilenYil , aylar.findIndex(ay => ay === girilenAY) , 0).getDate()
+
 
 console.log(`${girilenYil} yilinin ${girilenAY} ayi ${ayGunuHesapla} gunden olusmaktadir.`)
