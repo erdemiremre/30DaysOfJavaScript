@@ -12,4 +12,4 @@ let yeniCumle = itCompanies.join()
 console.log(yeniCumle + ' and ' +amazonKaldi)
 
 
-console.log(itCompanies)
+console.log(itCompanies.join(' ').toLocaleUpperCase())
