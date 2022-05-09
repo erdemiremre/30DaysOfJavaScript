@@ -24,3 +24,30 @@ console.log(itCompanies[middle])
 let varMi = itCompanies.indexOf('Apple')
 
 console.log(varMi)
+
+
+//Ezgersiz 3 
+
+const shoppinCart = ['Milk','Coffee','Tea','Honey']
+
+let isMeat = shoppinCart.includes('Meat')
+console.log(isMeat)
+
+isMeat === true ?console.log('Et zaten bulunuyor') :shoppinCart.unshift('Meat')&&console.log('Et Eklendi..')
+console.log(shoppinCart)
+
+let isSugar = shoppinCart.includes('Sugar')
+
+if(isSugar){
+    console.log('Seker zaten var')
+}else{
+    shoppinCart.push('Sugar')
+    console.log(shoppinCart)
+}
+
+let indexHoney = shoppinCart.indexOf('Honey')
+let Sugar = shoppinCart[shoppinCart.length-1]
+shoppinCart.pop()
+shoppinCart.pop()
+shoppinCart.push(Sugar)
+console.log(shoppinCart)
