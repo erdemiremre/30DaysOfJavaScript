@@ -72,3 +72,32 @@ console.log(meyveler.slice(1,2))
 let currentMeyveler = meyveler.splice(1,1,'patates','muz','kavun') //karpuz cikarir.
 console.log(currentMeyveler)
 console.log(meyveler)
+
+
+//push : (itmek) bir diziye son elemana ekler..
+
+const isimler2 = ['ali' ,'meryem', 'hilal']
+isimler2.push('derya')
+
+console.log(isimler2)
+
+
+//pop : dizideki son ogeyi kaldirmamizi saglar..
+
+const isimler3 = ['ali' ,'meryem', 'hilal','kamil']
+ let silininen = isimler3.pop();
+ console.log(silininen)
+ console.log(isimler3)
+
+ //shift : dizinin bastan cikarmak istedigimiz oge icin kullanilir
+
+ isimler3.shift();
+ console.log(isimler3)
+
+ //unshift() dizinin ilk elemanina oge ekleriz
+
+ isimler3.unshift('derya')
+ isimler3.push('meltem')
+ console.log(isimler3)
+
+console.log('abahrem'.split('').reverse().join(''))
