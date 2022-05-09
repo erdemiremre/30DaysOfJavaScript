@@ -98,6 +98,18 @@ const isimler3 = ['ali' ,'meryem', 'hilal','kamil']
 
  isimler3.unshift('derya')
  isimler3.push('meltem')
+ isimler3.push('ali')
+ isimler3.push('adem')
  console.log(isimler3)
 
 console.log('abahrem'.split('').reverse().join(''))
+
+
+//sort() diziyi siralamaya sokmamizi saglar
+ console.log(isimler3.sort()) 
+
+
+//bir dizi icerisinde birden fazla dizi bulunabilir.
+
+const sayiDizisi = [[1,2,3],['elma','armut','karpuz'],['patates','sogan']]
+console.log(sayiDizisi[1][1])
