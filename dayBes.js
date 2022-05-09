@@ -56,3 +56,19 @@ console.log(Array.isArray(meyveler2))
 
 
 //toString() : dizinizi string bir ifadeye donusturur.
+
+console.log(meyveler.toString())
+
+//join() : varsayilan olarak , atip string e donusturur.
+
+console.log(meyveler.join(' #'))
+
+//Slice : aralikta verdigimizi indekleri alir. parametre olarak bas. ve biris. alir
+
+console.log(meyveler.slice(1,2))
+
+//Splice : diziden belirtilen araliktaki cikarip ekleme yapmamizi saglar
+
+let currentMeyveler = meyveler.splice(1,1,'patates','muz','kavun') //karpuz cikarir.
+console.log(currentMeyveler)
+console.log(meyveler)
