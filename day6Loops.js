@@ -35,3 +35,39 @@ for (let i = 0; i < countries.length; i++) {
     newCountries.push(countries[i].toLocaleUpperCase('TR'))
 }
 console.log(newCountries);
+
+
+let i = 8;
+// while (i<names.length) {
+//     console.log('isim',names[i])
+//     i++
+// }
+
+do {
+    console.log('isim',names[i])
+    i++
+} while (i<names.length);
+
+//Dongulerde break kullanimi
+
+const animals = ['cat','bird','dog','elephant','bear']
+
+for (let animal of animals) {
+   if(animal ==='dog'){
+       console.log(`${animal} bulundu`)
+       break
+   }
+   console.log('Animal',animal)
+}
+
+//cointune kullanimi girilen degeri atlar devam eder.
+
+const animals2 = ['cat','bird','dog','elephant','bear']
+
+for (let animal of animals) {
+    if(animal ==='elephant'){
+        continue
+    }
+    console.log('Animal Name: ',animal)
+ }
+
