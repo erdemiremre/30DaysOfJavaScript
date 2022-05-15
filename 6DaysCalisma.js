@@ -94,3 +94,113 @@ for (let i = 0; i < countriesBase.length; i++) {
 }
 
 console.log(newCountriesStill)
+const landCountries = []
+for (let i = 0; i < countriesBase.length; i++) {
+    if(countriesBase[i].includes('land')){
+        landCountries.push(countriesBase[i])
+    }else{
+        console.log(`${countriesBase[i]} ulkesi land icermez`)
+    }
+    
+}
+console.log(landCountries)
+
+//Egzersiz 8
+
+let iaIleBitenler = []
+let kontrolEt = '';
+let uzunluk = 0;
+for (let i = 0; i < countriesBase.length; i++) {
+    kontrolEt = countriesBase[i].split('');
+    uzunluk = countriesBase[i].length;
+    if(kontrolEt[uzunluk-2]==='i' && kontrolEt[uzunluk-1]){
+            iaIleBitenler.push(countriesBase[i])
+    }else{
+        console.log(`${countriesBase[i]} ulkesinin sonu ia icermez`)
+    }
+}
+console.log(iaIleBitenler)
+
+//Egzersiz 9 
+
+//en fazla harf iceren ulke
+
+let sayac = 0;
+let enUzunUlke = ''
+for (let i = 0; i < countriesBase.length; i++) {
+    if(countriesBase[i].length>sayac){
+        sayac = countriesBase[i].length
+        enUzunUlke = countriesBase[i];
+    }
+    
+}
+console.log(enUzunUlke)
+
+
+//Egzersiz 10 
+
+// 5 karakter olan ulkeleri bulunuz..
+const fiveCharacterOfCountrys = []
+for (let i = 0; i < countriesBase.length; i++) {
+    if(countriesBase[i].length === 5){
+            fiveCharacterOfCountrys.push(countriesBase[i])
+            console.log(`${countriesBase[i]} 5 karakterden olusmaktadir`)
+    }else{
+        console.log(`${countriesBase[i]} 5 karakter icermez`)
+    }
+}
+console.log(fiveCharacterOfCountrys);
+
+
+const webTechs = ['HTML','CSS','JavaScript','React','Node','MongoDb']
+
+//Egzersiz 11 
+//web teknolojilerinden en uzun karakterli olani bulunuz..
+ 
+let maxLengthOfWebTech = '';
+let webTechLength = 0;
+
+for (let i = 0; i < webTechs.length; i++) {
+    if(webTechs[i].length>webTechLength){
+        webTechLength = webTechs[i].length;
+        maxLengthOfWebTech = webTechs[i]
+    }
+}
+console.log('en uzun karakterli web teknolojisi :' , maxLengthOfWebTech)
+
+
+const newWebTechs =[]
+
+for (let i = 0; i < webTechs.length; i++) {
+    newWebTechs.push([webTechs[i],webTechs[i].length])
+}
+console.log(newWebTechs)
+
+let endIndex = webTechs[webTechs.length-1]
+
+webTechs.pop();
+webTechs.push('Express')
+webTechs.push('Redux')
+webTechs.push()
+console.log(webTechs)
+
+const addedWebTechs = []
+
+for (let i = 0; i < webTechs.length; i++) {
+        addedWebTechs.push(webTechs[i])
+    if(webTechs[i]==='React'){
+        break
+    }
+}
+console.log(addedWebTechs)
+
+//Egzersiz 15 
+
+const fruits = ['banana','orange','mango','lemon']
+const newFruits = []
+
+for (let i = fruits.length-1; i >= 0; i--) {
+    
+    newFruits.push(fruits[i])
+}
+console.log(newFruits)
