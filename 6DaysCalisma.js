@@ -73,3 +73,24 @@ for (let i = 0; deneme.length <5; i++) {
     
 }
 console.log(deneme)
+
+const countriesBase = ['Albania','Bolivia','Canada','Denmark','Ethiopia','Finland','Germany','Hungray','Ireland','Japan','Kenya']
+const countriesNew = []
+const countries3ToUpper = []
+const countriesLength = []
+
+for (let i = 0; i < countriesBase.length; i++) {
+    countriesNew.push(countriesBase[i].toLocaleUpperCase());
+    let lengthCountries = countriesBase[i].length;
+    countries3ToUpper.push(countriesBase[i].toLocaleUpperCase().substring(0,3))
+    countriesLength.push(lengthCountries);
+}
+console.log(countriesLength)
+console.log(countries3ToUpper)
+
+const newCountriesStill = []
+for (let i = 0; i < countriesBase.length; i++) {
+    newCountriesStill.push([countriesBase[i],countries3ToUpper[i],countriesLength[i]])
+}
+
+console.log(newCountriesStill)
