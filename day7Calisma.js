@@ -62,3 +62,27 @@ console.log(result)
 
 
 //Egzersiz 8 
+
+const arrModify = ['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot'];
+
+const arrModify1 = ['Avocado', 'Tomato', 'Potato'];
+
+
+function modifyArray(array){
+  let newArray = [];
+  if(array.length<4){
+    return `Not found dizinin uzunlugu ${array.length}<5'tir.`;
+  }else{
+    for(let i =0; i<array.length; i++){
+      if(array[4]===array[i]){
+        newArray.push(array[4].toLocaleUpperCase())
+      }else{
+        newArray.push(array[i])
+      }
+    }
+    return newArray;
+  }
+}
+
+let result2 = modifyArray(arrModify1)
+console.log(result2)
