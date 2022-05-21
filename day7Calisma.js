@@ -32,3 +32,33 @@ function perimeterOfRectangle(length,width){
 
 console.log(`Dikdortgenin cevresi : ${perimeterOfRectangle(5,15)}`)
 
+
+//Egzersiz 6
+
+function volumeOfRectPrism(length , width , height){
+  let rect = length * width * height
+  return rect
+}
+
+console.log(`Hacim hesaplamasi : ${volumeOfRectPrism(3,5,10)}`)
+
+//Egzersiz 15
+
+function findMax(num1 , num2 , num3){
+  let maxNum = 0;
+  if(num1>num2 && num1>num3){
+     maxNum = num1;
+  }else if(num2>num1 && num2>num3){
+      maxNum = num2;
+  }else if(num3>num1 && num3>num2){
+    maxNum = num3;
+  }
+  return maxNum;
+}
+
+var result = findMax(15,25,-45)
+
+console.log(result)
+
+
+//Egzersiz 8 
