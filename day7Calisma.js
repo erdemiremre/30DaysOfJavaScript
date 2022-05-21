@@ -86,3 +86,32 @@ function modifyArray(array){
 
 let result2 = modifyArray(arrModify1)
 console.log(result2)
+
+
+// Egzersiz 
+
+function isPrime(number){
+  if(number>1 && number%1==0 && number%number==0 && number%2!=0){
+    return `${number} girilen deger asaldir`
+  }else{
+    return `${number} girilen deger asal degildir `
+  }
+
+}
+
+console.log(isPrime(2));
+
+
+function isPrime2(number){
+  let control = 0;
+
+  for(let i= 1; i<=number; i++){
+      if(number%2==0){
+        break;
+      }
+  }
+  if(){
+
+  }
+
+}
