@@ -110,8 +110,5 @@ function isPrime2(number){
         break;
       }
   }
-  if(){
-
-  }
 
 }
