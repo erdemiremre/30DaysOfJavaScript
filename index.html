@@ -24,7 +24,7 @@
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
     <title>Ol Sample</title>
     <script src="./koordinat.js"></script>
-  </head>
+
   </head>
   <body>
     <div>
@@ -40,12 +40,15 @@
       <a id="ykoordinat"></a></div>
       <div class="menu">
         <ul>
-            <li><a onclick="AddPoint()" href="#" data-bs-toggle="modal" data-bs-target="#NewProduct">Add Point</a></li>
+            <li><a onclick="AddPoint()" href="#">Add Point</a></li>
             <button id="modal-ac">Simdi dene</button>
             <li><a href="#">Query Point</a></li>
         </ul>
     </div>
     <div id="map" class="map"></div>
+    
+
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
 
@@ -59,7 +62,7 @@
     <script>
         //console.log('bu benim ilk internal scriptim')
     </script>  
-    
+
   </body>
 </html>
 
