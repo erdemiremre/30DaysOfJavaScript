@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="main.css" type="text/css">
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
     <title>Ol Sample</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./koordinat.js"></script>
 
   </head>
@@ -41,10 +43,13 @@
       <div class="menu">
         <ul>
             <li><a onclick="AddPoint()" href="#">Add Point</a></li>
-            <button id="modal-ac">Simdi dene</button>
             <li><a href="#">Query Point</a></li>
+            <button type="button" id="modal-ac" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#NewProduct">
+              Popup Ürün Ekle
+          </button>
         </ul>
     </div>
+    
     <div id="map" class="map"></div>
     
 
@@ -62,6 +67,38 @@
     <script>
         //console.log('bu benim ilk internal scriptim')
     </script>  
+
+<div class="modal" id="NewProduct">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h2 class="modal-title">Koordinat Penceresi</h2>
+          </div>
+          <div class="modal-body">
+              <div class="form-group">
+                  <label for="KategoriAd">Ürün Adı</label>
+                  <input class="form-control" data-val="true" data-val-length="DepartmanAd alanı uzunluğu en fazla 30 olan bir dize olmalıdır." data-val-length-max="30" id="newProductName" name="newProductName" type="text" value="">
+              </div>
+              <div class="form-group">
+                  <label for="KategoriAd">Kategori ID</label>
+                  <input class="form-control" data-val="true" id="newProductCategory" name="newProductCategory" type="text" value="">
+              </div>
+              <div class="form-group">
+                  <label for="KategoriAd">X</label>
+                  <input class="form-control" data-val="true" id="newProductUnitStok" name="newProductUnitStok" type="text" value="">
+              </div>
+              <div class="form-group">
+                  <label for="KategoriAd">Y</label>
+                  <input class="form-control" data-val="true" id="newProductPrice" name="newProductPrice" type="text" value="">
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-success" onclick="AddProduct()">Ekle</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 
   </body>
 </html>
